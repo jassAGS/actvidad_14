@@ -6,11 +6,13 @@
         <script type="text/javascript">
             function muestraOculta(id) {
                 var texto = document.getElementById('contenidos_'+id);
+                var enlace = document.getElementById('enlace_'+id)
                if(window.getComputedStyle(texto).visibility=="hidden"){
                 texto.style.visibility ="";
+                enlace.innerHTML="Ocultar contenido";
                }else{
                 texto.style.visibility="hidden";
-                
+                enlace.innerHTML="Mostrar html";
                }
             }
         </script>
